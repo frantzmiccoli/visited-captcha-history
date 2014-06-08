@@ -1,0 +1,93 @@
+body {
+    padding-top: 50px;
+}
+
+#content {
+    text-align: center;
+    width: 600px;
+}
+
+.clear {
+    clear: both;
+}
+
+#wrapper {
+    display: inline;
+}
+
+#captcha {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 25px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    text-align: left;
+}
+
+.error {
+    color: #d43f3a;
+}
+
+.success {
+    color: #3c763d;
+}
+
+.error, .success {
+    font-weight: bold;
+}
+
+#message-wrapper div {
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+
+#read-more {
+    display: none;
+}
+
+#message-wrapper {
+    text-align: left;
+}
+
+.slot {
+    position: relative;
+    float: left;
+    
+    width: 20px;
+    height: 20px;
+}
+
+.slot img { 
+    width: 20px;
+    height: 20px;
+}
+
+.slot a, .slot img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slot {
+    z-index: 10;
+}
+
+.test-slot {
+    z-index: 1;   
+}
+
+#captcha a, #captcha a:hover, #captcha a:visited {
+    cursor: default;
+    text-decoration: none;
+}
+
+#captcha a {
+    color: white;
+}
+
+#captcha a:visited {
+    color: black;
+}

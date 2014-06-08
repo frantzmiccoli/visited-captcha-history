@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/style.css" type="text/css" media="screen" rel="stylesheet" />
+        
+        <script type="application/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+
+        <script type="application/javascript" src="js/linkslist.js"></script>
+        <script type="application/javascript" src="js/demo.js"></script>
+
+        <title>:visited and Captchas</title>
+    </head>
+    <body>
+
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">:visited and Captchas</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Demo</a></li>
+                        <li><a href="#about">Source</a></li>
+                        <li><a href="#contact">Article</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix" > </div>
+
+        <div class="container">
+
+            <div id="content">
+                <h3>This looks like your normal captcha service</h3>
+
+                <p>Please prove us that you are human.</p>
+
+                <div id="message-wrapper">
+                    <div id="message"> </div>
+                    <div id="visited"> </div>
+                    <div id="read-more" class="main">
+                        Using the ":visited" pseudo-selector we can fake the aspect of the Captcha and learn
+                        about your navigation history. You can learn more by reading the source or the affiliated
+                        article.
+                    </div>
+                </div>
+
+                <div class="clear" > </div>
+
+                <div id="wrapper">
+                    <div id="captcha"></div>
+
+                    <div class="clear" > </div>
+
+                    <input id="typed" type="text" />
+                    <input id="submit" type="submit" />
+                </div>
+
+                <div class="clear" > </div>
+
+            </div>
+
+
+
+        </div>
+
+
+    </body>
+</html>

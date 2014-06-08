@@ -1,0 +1,24 @@
+{
+  "name": "captcha-webhistory",
+  "version": "0.1.0",
+  "description": "A proof of concept about mixing CSS \":visited\" pseudo-class and captcha to maliciously access user web history",
+  "keywords": [
+    "security"
+  ],
+  "authors": [
+    "Fräntz Miccoli"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "jquery": "~2.1.1"
+  }
+}
