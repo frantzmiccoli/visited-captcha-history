@@ -19,8 +19,10 @@
             this._$message = $('#message');
             this._$visited = $('#visited');
             this._$readMore = $('#read-more');
+            this._$form = $('#form');
             this._$typedInput = $('#typed');
             this._$captcha = $('#captcha');
+
             
             this._charsList = ('abcdefghijklmnopqrstuvwxyz').split('');
             
@@ -36,6 +38,14 @@
             this._adaptDisplay();
             this._getExpectedRe();
             this._bindListeners();
+        };
+
+        this._bindListeners = function() {
+            var objectRef = this;
+            this._$form.bind('submit', function() {
+                objectRef._checkInput();
+                return false;
+            });
         };
         
         this._generateCaptchaSpace = function() {
@@ -77,13 +87,6 @@
                 consecutive1 = (randomSlots.join('').indexOf('11') !== -1);
             }
             return randomSlots;
-        };
-        
-        this._bindListeners = function() {
-            var objectRef = this;
-            $('#submit').bind('click', function() {
-                objectRef._checkInput();
-            });
         };
         
         this._dispatchLinksAmongTestSlots = function() {
@@ -141,9 +144,9 @@
             var cumulatedLeft = 0;
             this._$slots.each(function(index, item) {
                 var $item = $(item),
-                    top = Math.random() * 10 - 11,
+                    top = Math.random() * 10 - 13,
                     left = Math.random() * 10 - 6,
-                    angle = Math.random() * 60 - 30;
+                    angle = Math.random() * 50 - 25;
                 cumulatedLeft += left;
                 $item.css('top', top);    
                 $item.css('left', cumulatedLeft);

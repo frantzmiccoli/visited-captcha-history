@@ -1,6 +1,5 @@
 var linksList = [
-    'https://bitbucket.com/',
+    'http://www.reddit.com/',
     'https://github.com/',
-    'http://www.macrumors.com/',
     'https://news.ycombinator.com/'
 ];
