@@ -71,6 +71,10 @@ h1, h2, h3, h4, h5, h6, p {
     left: 0;
 }
 
+#visited {
+    font-weight: bold;
+}
+
 .slot {
     z-index: 10;
 }
