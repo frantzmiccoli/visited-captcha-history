@@ -21,6 +21,7 @@ body {
     font-size: 25px;
     padding: 10px;
     border: 1px solid black;
+    pointer-events: none;
 }
 
 h1, h2, h3, h4, h5, h6, p {
