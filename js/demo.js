@@ -212,7 +212,7 @@
                 }
                 visitedMessage += '</ul>';
             } else {
-                visitedMessage = 'We have learn nothing about you browsing history but we could have.';
+                visitedMessage = 'We haven\'t learned anything about your browsing history, but we could have.';
             }
             this._$visited.html(visitedMessage);
             this._$readMore.show();
