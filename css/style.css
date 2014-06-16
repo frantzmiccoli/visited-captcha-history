@@ -21,6 +21,11 @@ body {
     font-size: 25px;
     padding: 10px;
     border: 1px solid black;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -55,12 +60,12 @@ h1, h2, h3, h4, h5, h6, p {
 .slot {
     position: relative;
     float: left;
-    
+
     width: 20px;
     height: 20px;
 }
 
-.slot img { 
+.slot img {
     width: 20px;
     height: 20px;
 }
@@ -88,7 +93,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .test-slot {
-    z-index: 1;   
+    z-index: 1;
 }
 
 #captcha a, #captcha a:hover, #captcha a:visited {
