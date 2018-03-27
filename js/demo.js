@@ -9,7 +9,7 @@
             array[j] = temp;
         }
         return array;
-    };
+    }
     
     linksList = shuffleArray(linksList);
     
@@ -161,9 +161,7 @@
             var expectedRe = this._getExpectedRe(),
                 typedValue = this._$typedInput.val().split(' ').join(''),
                 match = expectedRe.exec(typedValue);
-            
-            console.log(expectedRe);
-            
+
             if (match === null) {
                 this._inputDoesntMatch();
             } else {
@@ -191,8 +189,13 @@
                     continue;
                 }
                 var charFound = match[index];
+
+                if (typeof(charFound) === 'undefined') {
+                    continue;
+                }
+
                 if (charFound.length < 1) {
-                    continue   
+                    continue;
                 }
                 var site = this._positionsCharsLinks[index][charFound];
                 visitedSites.push(site);
